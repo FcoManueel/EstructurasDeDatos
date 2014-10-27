@@ -10,6 +10,31 @@ int main()
 
     cout << "Arbol Binario de Busqueda que maneja datos enteros.\n\n";
 
+    AB.agregar(10);
+    AB.agregar(9);
+    AB.agregar(11);
+
+    AB.agregar(100);
+    AB.agregar(50);
+    AB.agregar(150);
+    AB.agregar(30);
+    AB.agregar(70);
+    AB.agregar(130);
+    AB.agregar(170);
+    AB.agregar(200);
+
+    AB.agregar(25);
+    AB.agregar(75);
+    AB.agregar(125);
+    AB.agregar(175);
+    AB.agregar(40);
+    AB.agregar(50);
+    AB.agregar(55);
+    AB.agregar(60);
+    AB.agregar(150);
+    AB.agregar(145);
+
+
     while(repetir){
         cout << "\n\t";
         cout << char(201);
@@ -29,27 +54,6 @@ int main()
         cout << char(188);
         //cout << "\n\t--------------------------\n\n";
 
-        AB.agregar(100);
-        AB.agregar(50);
-        AB.agregar(150);
-        AB.agregar(30);
-        AB.agregar(70);
-        AB.agregar(130);
-        AB.agregar(170);
-        AB.agregar(200);
-        /*
-        AB.agregar(25);
-        AB.agregar(75);
-        AB.agregar(125);
-        AB.agregar(175);
-        AB.agregar(40);
-        AB.agregar(50);
-        AB.agregar(55);
-        AB.agregar(60);
-        AB.agregar(150);
-        AB.agregar(145);
-        */
-
         cout << "\nElija una opcion: ";
         cin >> num_op;
 
@@ -58,27 +62,27 @@ int main()
                 cout << "Ingrese el elemento a agregar: ";
                 cin >> aux;
                 if( AB.agregar(aux) ){
-                    cout << "El elemento fue agregado con exito!\n";
+                    cout << "\t~ El elemento fue agregado con exito! ~\n";
                 }else{
-                    cout << "El elemento no pudo ser agregado :(\n";
+                    cout << "\t~ El elemento no pudo ser agregado :( ~\n";
                 }
                 break;
             case 2:
                 cout << "Ingrese el elemento a borrar: ";
                 cin >> aux;
                 if( AB.borrar(aux) ){
-                    cout << "El elemento fue borrado con exito!\n";
+                    cout << "\t~ El elemento fue borrado con exito! ~\n";
                 }else{
-                    cout << "El elemento no pudo ser borrado :(\n";
+                    cout << "\t~ El elemento no pudo ser borrado :( ~\n";
                 }
                 break;
             case 3:
                 cout << "Ingrese el elemento a buscar: ";
                 cin >> aux;
                 if( AB.buscar(aux) ){
-                    cout << "El elemento ya se encuentra en el arbol!\n";
+                    cout << "\t~ El elemento ya se encuentra en el arbol! ~\n";
                 }else{
-                    cout << "El elemento no se encuentra en el arbol :(\n";
+                    cout << "\t~ El elemento no se encuentra en el arbol :( ~\n";
                 }
                 break;
             case 4:
@@ -93,11 +97,11 @@ int main()
                 repetir = false;
                 break;
             default:
-                cout << "No mijo, que andas haciendo :(\n";
+                cout << "\t~ No mijo, que andas haciendo :( da una opcion valida, paro ~\n";
         }
         //cout << "\n------------------------------------------------------\n";
     }
-    cout << "Gracias por todo :D! Vuelve pronto morro.\n";
+    cout << "\t~ Gracias por todo :D! Vuelve pronto morro. ~\n";
     cin.ignore();
     cin.get();
 }
